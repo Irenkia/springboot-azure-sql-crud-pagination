@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    username: irenkia@irenkiaserver
+    password: superhero@54321
+    url: jdbc:sqlserver://irenkiaserver.database.windows.net:1433;database=mydemo;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+  jpa:
+    show-sql: 'true'
+    hibernate:
+      ddl-auto: update
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
