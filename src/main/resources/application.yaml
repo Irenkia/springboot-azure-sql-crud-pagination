@@ -7,8 +7,11 @@ spring:
     show-sql: 'true'
     hibernate:
       ddl-auto: update
+      dialect: org.hibernate.dialect.SQLServer2012Dialect
 logging:
   level:
     org:
       hibernate:
         SQL: DEBUG
+server:
+  port: 9191
